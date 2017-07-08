@@ -1,0 +1,126 @@
+*{margin: 0;padding: 0;}
+body{overflow: hidden;}
+.web
+  {
+    display: flex;
+    flex-direction: column;
+  }
+figure
+  {
+
+    width: 100px;
+  }
+header
+  {
+    padding: 5px;
+    padding-left:30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    border: 2px solid;
+    box-sizing: border-box;
+  }
+figure img
+  {
+
+    height: 100px;
+    width:100px;
+  }
+header nav
+  {
+    display: flex;
+    align-items: center;
+
+    padding-left:20px;
+    padding-right: 20px;
+
+  }
+header nav ul
+  {
+    border: 2px solid;
+    list-style-type: none;
+    box-sizing: border-box;
+  }
+header nav ul li
+  {
+
+    display: inline-flex;
+    margin-right: 20px;
+    flex-direction: column;
+
+  }
+header nav ul li .txt
+  {
+    position: relative;
+    top:20px;
+    font-size: 30px;
+    text-decoration: none;
+    min-height: 41px;
+    color:#4ec5c1;
+    font-family: 'Fjalla One', sans-serif;
+  }
+header nav ul li .txt:nth-child(1)
+  {
+  transition: color 0.5s, opacity 0.7s,transform 1.5s;
+  z-index: 1;
+  }
+header nav ul li .txt:nth-child(2)
+  {
+  transition: color 0.5s, opacity 1s,transform 1s;
+  opacity: 0;
+  }
+header nav ul li .txt:nth-child(1):hover
+  {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+header nav ul li .txt:nth-child(1):hover + :nth-child(2)
+  {
+    opacity: 1;
+    color:#E24E42;
+    transform: translateY(-40px);
+  }
+ header nav ul li div
+  {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 20px;
+  }
+.svgf
+ {
+   transition: fill 1s;
+   fill:#0E0B16;
+ }
+
+ header nav ul li div svg
+  {
+    height: inherit;
+    width: inherit;
+  }
+header nav ul li div .facebook:hover .svgf
+   {
+     fill:#3B5998;
+   }
+ header nav ul li div .twitter:hover .svgf
+   {
+     fill:#1DA1F2;
+   }
+.button
+  {
+    height: 50px;
+    width: 50px;
+  }
+main
+  {
+    border: 10px solid purple;
+    box-sizing: border-box;
+    transition: transform 1s;
+   }
+.section
+  {
+    box-sizing: border-box;
+    height: 100vh;
+    border:3px solid green;
+    transition: transform 1.5s;
+  }
