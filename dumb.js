@@ -11,7 +11,7 @@ const secheight = dheight/seccount;
 let nullpoint = 0;
 const lastclass= $('.section').last().attr('class').split(" ")[0];
 let scrollbull =true;
-setInterval(()=>{scrollbull=true;},300);
+setInterval(()=>{scrollbull=true;},400);
 $('body').on('DOMMouseScroll', function(e){
   if(scrollbull==true){
 scrollbull=false;

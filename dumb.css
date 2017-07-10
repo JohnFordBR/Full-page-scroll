@@ -114,18 +114,45 @@ header nav ul li div .facebook:hover .svgf
   }
 main
   {
-    border: 10px solid purple;
+    border: 10px solid green;
     box-sizing: border-box;
     transition: transform 1s;
+
    }
 .section
   {
     box-sizing: border-box;
     height: 100vh;
     border:3px solid green;
-    transition: transform 1.5s;
+    transition: transform 2s;
+  }
+.section1
+  {
+    background-color: #813772;
+
   }
 .sectionb
   {
-    background-color: #E24E42;
+    display: flex;
+    flex-direction: row;
+    background-color: #3cc47c;
   }
+.sectionpu
+  {
+    background-color: #062f4f;
+  }
+/*.scewdiv
+  {
+    height:100%;
+    width: 50%;
+    background-color: red;
+    margin: auto;
+    transform: skewX(-45.5deg);
+  }
+.trianglediv
+  {
+    background-color: yellow;
+    height: 100%;
+    width: 25%;
+
+  }*/
